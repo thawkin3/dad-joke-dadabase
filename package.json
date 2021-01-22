@@ -1,7 +1,7 @@
 {
   "name": "dad-joke-dadabase",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dad joke \"dadabase\" built with json-server and GraphQL",
   "main": "index.js",
   "scripts": {
     "start": "npm run start:json-server & npm run start:graphql",
@@ -9,8 +9,8 @@
     "start:graphql": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["graphql", "apollo", "apollo server", "json-server", "rest api"],
+  "author": "Tyler Hawkins",
   "license": "ISC",
   "dependencies": {
     "apollo-datasource-rest": "^0.9.7",
