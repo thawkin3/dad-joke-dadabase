@@ -9,6 +9,8 @@ This app is built with [json-server](https://github.com/typicode/json-server).
 1. `npm install`
 2. `npm start`
 
+This will start the json-server API on port 3000 and the GraphQL API on port 4000.
+
 ## REST API with json-server
 
 ### Database
@@ -54,9 +56,9 @@ GET /ratings/1?_expand=joke
 
 ## GraphQL API with Apollo Server
 
-## Jokes
+### Jokes
 
-Get all jokes
+#### Get all jokes
 
 ```graphql
 query GetAllJokes {
@@ -67,7 +69,7 @@ query GetAllJokes {
 }
 ```
 
-Get a specific joke
+#### Get a specific joke
 
 ```graphql
 query GetJoke {
@@ -78,7 +80,7 @@ query GetJoke {
 }
 ```
 
-Get a specific joke with ratings
+#### Get a specific joke with ratings
 
 ```graphql
 query GetJokeWithRatings {
@@ -92,9 +94,9 @@ query GetJokeWithRatings {
 }
 ```
 
-## Ratings
+### Ratings
 
-Get all ratings
+#### Get all ratings
 
 ```graphql
 query GetAllRatings {
@@ -105,3 +107,12 @@ query GetAllRatings {
   }
 }
 ```
+
+## Resources
+
+- json-server: https://github.com/typicode/json-server
+- Apollo GraphQL full-stack tutorial: - https://www.apollographql.com/docs/tutorial/introduction/
+- Apollo GraphQL full-stack tutorial GitHub repo: https://github.com/apollographql/fullstack-tutorial
+- Defining a GraphQL schema: https://www.apollographql.com/docs/apollo-server/schema/schema/
+- Layering GraphQL on top of an existing REST API: https://www.apollographql.com/blog/layering-graphql-on-top-of-rest-569c915083ad/
+- Apollo server data sources: https://www.apollographql.com/docs/apollo-server/data/data-sources/
