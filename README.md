@@ -2,7 +2,7 @@
 
 Groan at some dad jokes and rate them as well. Which joke will be your favorite?
 
-This app is built with [json-server](https://github.com/typicode/json-server).
+This app is built with [json-server](https://github.com/typicode/json-server) and [Apollo](https://www.apollographql.com/docs/).
 
 ## Running the app locally
 
