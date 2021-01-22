@@ -9,7 +9,7 @@ This app is built with [json-server](https://github.com/typicode/json-server).
 1. `npm install`
 2. `npm start`
 
-## json-server routes
+## REST API with json-server
 
 ### Database
 
@@ -50,4 +50,58 @@ GET /ratings?jokeId=1
 
 # Get a rating along with the joke itself
 GET /ratings/1?_expand=joke
+```
+
+## GraphQL API with Apollo Server
+
+## Jokes
+
+Get all jokes
+
+```graphql
+query GetAllJokes {
+  jokes {
+    id
+    content
+  }
+}
+```
+
+Get a specific joke
+
+```graphql
+query GetJoke {
+  joke(id: 1) {
+    id
+    content
+  }
+}
+```
+
+Get a specific joke with ratings
+
+```graphql
+query GetJokeWithRatings {
+  joke(id: 1) {
+    id
+    content
+    ratings {
+      score
+    }
+  }
+}
+```
+
+## Ratings
+
+Get all ratings
+
+```graphql
+query GetAllRatings {
+  ratings {
+    id
+    jokeId
+    score
+  }
+}
 ```
