@@ -11,7 +11,7 @@ class JokesAPI extends RESTDataSource {
   }
 
   async getJokes() {
-    return this.get('jokes')
+    return this.get('jokes?_embed=ratings')
   }
 
   async postJoke(jokeContent) {

@@ -56,9 +56,27 @@ const submitJokeRating = () => {
 
 nextJokeButton.addEventListener('click', submitJokeRating)
 
-fetch('https://dad-joke-dadabase-rest-api.herokuapp.com/jokes?_embed=ratings')
-  .then(response => response.json())
-  .then(data => {
-    jokes.push(...data)
+fetch('/graphql', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    query: `
+    query GetAllJokesWithRatings {
+      jokes {
+        id
+        content
+        ratings {
+          score
+          id
+          jokeId
+        }
+      }
+    }
+  `,
+  }),
+})
+  .then(res => res.json())
+  .then(res => {
+    jokes.push(...res.data.jokes)
     displayNextJoke()
   })

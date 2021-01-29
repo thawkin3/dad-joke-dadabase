@@ -18,7 +18,8 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app })
 
-app.use(express.static(path.join(__dirname, 'public')))
+app
+  .use(express.static(path.join(__dirname, 'public')))
   .get('/', (req, res) => {
     res.sendFile('index.html', { root: 'public' })
   })

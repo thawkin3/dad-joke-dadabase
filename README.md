@@ -72,6 +72,20 @@ query GetAllJokes {
 }
 ```
 
+#### Get all jokes with ratings
+
+```graphql
+query GetAllJokesWithRatings {
+  jokes {
+    id
+    content
+    ratings {
+      score
+    }
+  }
+}
+```
+
 #### Get a specific joke
 
 ```graphql
