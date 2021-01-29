@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
@@ -5,6 +9,7 @@ html {
 html, body {
   padding: 0;
   margin: 0;
+  background-color: #f6f7f9;
 }
 
 body {
@@ -12,4 +17,29 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   padding: 2rem;
   text-align: center;
+}
+
+.project {
+  width: 40rem;
+  max-width: 100%;
+  margin: 2rem auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0.1875rem 0.375rem 0;
+  border-radius: 0.25rem;
+  background: #fff;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.1s linear 0s;
+}
+
+.jokeContent {
+  margin: 0 0 3rem 0;
+}
+
+.formGroup {
+  padding: 0 0.5rem;
+}
+
+.averageRating {
+  margin: 2rem 0;
 }
