@@ -133,3 +133,8 @@ query GetAllRatings {
 - Defining a GraphQL schema: https://www.apollographql.com/docs/apollo-server/schema/schema/
 - Layering GraphQL on top of an existing REST API: https://www.apollographql.com/blog/layering-graphql-on-top-of-rest-569c915083ad/
 - Apollo server data sources: https://www.apollographql.com/docs/apollo-server/data/data-sources/
+- Apollo server middleware: https://www.apollographql.com/docs/apollo-server/integrations/middleware/
+- apollo-server-express: https://www.npmjs.com/package/apollo-server-express
+- Apollo client: https://www.apollographql.com/docs/react/get-started/
+- Calling a GraphQL API with Fetch: https://www.apollographql.com/blog/4-simple-ways-to-call-a-graphql-api-a6807bcdb355/
+
