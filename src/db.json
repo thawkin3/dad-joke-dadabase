@@ -1,18 +1,97 @@
 {
   "jokes": [
-    { "id": 1, "content": "This is the joke." },
-    { "id": 2, "content": "This is a funny joke." },
-    { "id": 3, "content": "This is another joke." }
+    {
+      "id": 1,
+      "content": "I don't often tell dad jokes, but when I do, sometimes he laughs."
+    },
+    {
+      "id": 2,
+      "content": "Why was the scarecrow promoted? For being outstanding in his field."
+    },
+    {
+      "id": 3,
+      "content": "What did the grape do when someone stepped on him? He let out a little whine."
+    },
+    {
+      "id": 4,
+      "content": "Einstein, Pascal and Newton are playing hide and seek. Einstein covers his eyes and begins counting. While Pascal runs off and hides, Newton takes out some chalk and marks a square on the ground with a side length of exactly 1 meter, then sits down inside the square. When Einstein is finished counting and sees Newton sitting on the ground, he yells, \"Ha, I've found you, Newton!\". Newton however replies, \"No you haven't! You've found one Newton over a square meter. You've found Pascal!"
+    }
   ],
   "ratings": [
-    { "id": 1, "jokeId": 1, "score": 8 },
-    { "id": 2, "jokeId": 2, "score": 3 },
-    { "id": 3, "jokeId": 3, "score": 6 },
-    { "id": 4, "jokeId": 1, "score": 7 },
-    { "id": 5, "jokeId": 2, "score": 6 },
-    { "id": 6, "jokeId": 3, "score": 4 },
-    { "id": 7, "jokeId": 1, "score": 9 },
-    { "id": 8, "jokeId": 2, "score": 10 },
-    { "id": 9, "jokeId": 3, "score": 2 }
+    {
+      "id": 1,
+      "jokeId": 1,
+      "score": 8
+    },
+    {
+      "id": 2,
+      "jokeId": 2,
+      "score": 3
+    },
+    {
+      "id": 3,
+      "jokeId": 3,
+      "score": 6
+    },
+    {
+      "id": 4,
+      "jokeId": 1,
+      "score": 7
+    },
+    {
+      "id": 5,
+      "jokeId": 2,
+      "score": 6
+    },
+    {
+      "id": 6,
+      "jokeId": 3,
+      "score": 4
+    },
+    {
+      "id": 7,
+      "jokeId": 1,
+      "score": 9
+    },
+    {
+      "id": 8,
+      "jokeId": 2,
+      "score": 10
+    },
+    {
+      "id": 9,
+      "jokeId": 3,
+      "score": 2
+    },
+    {
+      "id": 10,
+      "jokeId": 4,
+      "score": 10
+    },
+    {
+      "id": 11,
+      "jokeId": 4,
+      "score": 10
+    },
+    {
+      "id": 12,
+      "jokeId": 4,
+      "score": 10
+    },
+    {
+      "id": 13,
+      "jokeId": 4,
+      "score": 10
+    },
+    {
+      "id": 14,
+      "jokeId": 4,
+      "score": 10
+    },
+    {
+      "id": 15,
+      "jokeId": 4,
+      "score": 10
+    }
   ]
 }
