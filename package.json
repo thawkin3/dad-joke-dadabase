@@ -4,17 +4,29 @@
   "description": "Dad joke \"dadabase\" built with json-server and GraphQL",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write \"{src,test}/**/*.{js,jsx,md}\"",
+    "format:watch": "onchange \"{src,test}/**/*.{js,jsx,md}\" -- prettier --write {{changed}}",
     "start": "npm run start:json-server & npm run start:graphql",
     "start:json-server": "node src/json-server --watch",
     "start:graphql": "node src/apollo-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["graphql", "apollo", "apollo server", "json-server", "rest api"],
+  "keywords": [
+    "graphql",
+    "apollo",
+    "apollo server",
+    "json-server",
+    "rest api"
+  ],
   "author": "Tyler Hawkins",
   "license": "ISC",
   "dependencies": {
     "apollo-datasource-rest": "^0.9.7",
     "apollo-server": "^2.19.2",
     "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "onchange": "^7.1.0",
+    "prettier": "^2.2.1"
   }
 }

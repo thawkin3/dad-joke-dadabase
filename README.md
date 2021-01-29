@@ -35,6 +35,9 @@ GET /jokes/1?_embed=ratings
 
 # Get all ratings for a specific joke
 GET /jokes/1/ratings
+
+# Get all jokes with all ratings included
+GET /jokes?_embed=ratings
 ```
 
 ### Ratings
