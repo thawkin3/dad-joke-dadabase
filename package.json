@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run start:json-server & npm run start:graphql",
-    "start:json-server": "json-server --watch src/db.json",
+    "start:json-server": "json-server --watch src/db.json --port 5000",
     "start:graphql": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
