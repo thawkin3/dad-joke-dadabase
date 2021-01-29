@@ -31,19 +31,27 @@ const submitJokeRating = () => {
   if (ratingInput && ratingInput.value) {
     const score = Number(ratingInput.value)
     const jokeId = jokes[currentJokeIndex].id
-    const postData = { jokeId, score }
 
-    fetch('https://dad-joke-dadabase-rest-api.herokuapp.com/ratings', {
+    fetch('/graphql', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(postData),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        query: `
+        mutation CreateRating {
+          rating(jokeId: ${jokeId}, score: ${score}) {
+            id
+            score
+            jokeId
+          }
+        }
+      `,
+      }),
     })
-      .then(response => response.json())
-      .then(responseData => {
-        const jokeToUpdate = jokes.find(joke => joke.id === responseData.jokeId)
-        jokeToUpdate && jokeToUpdate.ratings.push(responseData)
+      .then(res => res.json())
+      .then(res => {
+        const rating = res.data.rating
+        const jokeToUpdate = jokes.find(joke => joke.id === rating.jokeId)
+        jokeToUpdate && jokeToUpdate.ratings.push(rating)
       })
       .finally(() => {
         ratingInput.checked = false

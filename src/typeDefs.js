@@ -19,6 +19,10 @@ const typeDefs = gql`
     rating(id: Int!): Rating
     ratings: [Rating]
   }
+
+  type Mutation {
+    rating(jokeId: Int!, score: Int!): Rating
+  }
 `
 
 module.exports = typeDefs

@@ -125,6 +125,18 @@ query GetAllRatings {
 }
 ```
 
+## Create a new rating
+
+```graphql
+mutation CreateRating {
+  rating(jokeId: 1, score: 8) {
+    id
+    score
+    jokeId
+  }
+}
+```
+
 ## Resources
 
 - json-server: https://github.com/typicode/json-server
