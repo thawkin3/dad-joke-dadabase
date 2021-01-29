@@ -6,12 +6,10 @@ const jokes = []
 let currentJokeIndex = -1
 
 const displayNextJoke = () => {
-  console.log('currentJokeIndex BEFORE displaying new joke', currentJokeIndex)
   currentJokeIndex++
   if (currentJokeIndex >= jokes.length) {
     currentJokeIndex = 0
   }
-  console.log('currentJokeIndex AFTER displaying new joke', currentJokeIndex)
 
   const joke = jokes[currentJokeIndex]
 
@@ -34,12 +32,6 @@ const submitJokeRating = () => {
     const score = Number(ratingInput.value)
     const jokeId = jokes[currentJokeIndex].id
     const postData = { jokeId, score }
-    console.log(
-      'currentJokeIndex',
-      currentJokeIndex,
-      'joke your are rating',
-      postData
-    )
 
     fetch('/ratings', {
       method: 'POST',
@@ -50,7 +42,6 @@ const submitJokeRating = () => {
     })
       .then(response => response.json())
       .then(responseData => {
-        console.log('response received', responseData)
         const jokeToUpdate = jokes.find(joke => joke.id === responseData.jokeId)
         jokeToUpdate && jokeToUpdate.ratings.push(responseData)
       })
@@ -68,7 +59,6 @@ nextJokeButton.addEventListener('click', submitJokeRating)
 fetch('/jokes?_embed=ratings')
   .then(response => response.json())
   .then(data => {
-    console.log(data)
     jokes.push(...data)
     displayNextJoke()
   })
