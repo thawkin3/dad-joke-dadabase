@@ -2,14 +2,14 @@
 
 Groan at some dad jokes and rate them as well. Which joke will be your favorite?
 
-This app is built with [json-server](https://github.com/typicode/json-server) and [Apollo](https://www.apollographql.com/docs/).
+This app is built with [Apollo](https://www.apollographql.com/docs/).
 
 ## Running the app locally
 
 1. `npm install`
 2. `npm start`
 
-This will start the json-server API on port 3000 and the GraphQL API on port 4000.
+This will start the GraphQL API on port 4000.
 
 ## REST API with json-server
 

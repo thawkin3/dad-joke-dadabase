@@ -33,7 +33,7 @@ const submitJokeRating = () => {
     const jokeId = jokes[currentJokeIndex].id
     const postData = { jokeId, score }
 
-    fetch('/ratings', {
+    fetch('https://dad-joke-dadabase-rest-api.herokuapp.com/ratings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ const submitJokeRating = () => {
 
 nextJokeButton.addEventListener('click', submitJokeRating)
 
-fetch('/jokes?_embed=ratings')
+fetch('https://dad-joke-dadabase-rest-api.herokuapp.com/jokes?_embed=ratings')
   .then(response => response.json())
   .then(data => {
     jokes.push(...data)

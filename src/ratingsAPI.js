@@ -3,7 +3,7 @@ const { RESTDataSource } = require('apollo-datasource-rest')
 class RatingsAPI extends RESTDataSource {
   constructor() {
     super()
-    this.baseURL = 'http://localhost:3000/'
+    this.baseURL = 'https://dad-joke-dadabase-rest-api.herokuapp.com/'
   }
 
   async getRating(id) {
