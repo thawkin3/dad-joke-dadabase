@@ -2,14 +2,14 @@
 
 Groan at some dad jokes and rate them as well. Which joke will be your favorite?
 
-This app is built with [Apollo](https://www.apollographql.com/docs/).
+This app is built with [Apollo](https://www.apollographql.com/docs/). The original REST API is built with [JSON Server](https://github.com/typicode/json-server) and can be found here: https://github.com/thawkin3/dad-joke-dadabase-rest-api
 
 ## Running the app locally
 
 1. `npm install`
 2. `npm start`
 
-This will start the GraphQL API on port 4000.
+This will start the app on port 4000. The GraphQL API endpoint is at `/graphql`.
 
 ## REST API with json-server
 
@@ -149,4 +149,4 @@ mutation CreateRating {
 - apollo-server-express: https://www.npmjs.com/package/apollo-server-express
 - Apollo client: https://www.apollographql.com/docs/react/get-started/
 - Calling a GraphQL API with Fetch: https://www.apollographql.com/blog/4-simple-ways-to-call-a-graphql-api-a6807bcdb355/
-
+- Mutation resolvers: https://www.apollographql.com/docs/tutorial/mutation-resolvers/
