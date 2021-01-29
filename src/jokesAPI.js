@@ -1,34 +1,34 @@
-const { RESTDataSource } = require('apollo-datasource-rest');
+const { RESTDataSource } = require('apollo-datasource-rest')
 
 class JokesAPI extends RESTDataSource {
   constructor() {
-    super();
-    this.baseURL = 'http://localhost:3000/';
+    super()
+    this.baseURL = 'http://localhost:3000/'
   }
 
   async getJoke(id) {
-    return this.get(`jokes/${id}?_embed=ratings`);
+    return this.get(`jokes/${id}?_embed=ratings`)
   }
 
   async getJokes() {
-    return this.get('jokes');
+    return this.get('jokes')
   }
 
   async postJoke(jokeContent) {
-    return this.post('jokes', jokeContent);
+    return this.post('jokes', jokeContent)
   }
 
   async replaceJoke(joke) {
-    return this.put('jokes', joke);
+    return this.put('jokes', joke)
   }
 
   async updateJoke(joke) {
-    return this.patch('jokes', { id: joke.id, joke });
+    return this.patch('jokes', { id: joke.id, joke })
   }
 
   async deleteJoke(id) {
-    return this.delete(`jokes/${id}`);
+    return this.delete(`jokes/${id}`)
   }
 }
 
-module.exports = JokesAPI;
+module.exports = JokesAPI

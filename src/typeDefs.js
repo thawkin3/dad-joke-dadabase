@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server');
+const { gql } = require('apollo-server')
 
 const typeDefs = gql`
   type Joke {
@@ -19,6 +19,6 @@ const typeDefs = gql`
     rating(id: Int!): Rating
     ratings: [Rating]
   }
-`;
+`
 
-module.exports = typeDefs;
+module.exports = typeDefs

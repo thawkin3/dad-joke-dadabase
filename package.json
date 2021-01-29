@@ -4,8 +4,8 @@
   "description": "Dad joke \"dadabase\" built with json-server and GraphQL",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"{src,test}/**/*.{js,jsx,md}\"",
-    "format:watch": "onchange \"{src,test}/**/*.{js,jsx,md}\" -- prettier --write {{changed}}",
+    "format": "prettier --write \"{src,public}/**/*.{js,jsx,md}\"",
+    "format:watch": "onchange \"{src,public}/**/*.{js,jsx,md}\" -- prettier --write {{changed}}",
     "start": "npm run start:json-server & npm run start:graphql",
     "start:json-server": "node src/json-server --watch",
     "start:graphql": "node src/apollo-server.js",
